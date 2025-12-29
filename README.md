@@ -93,6 +93,25 @@ Examples:
 .\run_agent.ps1 "what is photosynthesis?"
 ```
 
+GUI (popup window)
+------------------
+
+You can also run a small popup GUI that accepts a question and returns a brief answer.
+
+Command Prompt:
+
+```powershell
+.\run_agent_gui.bat
+```
+
+PowerShell:
+
+```powershell
+.\run_agent_gui.ps1
+```
+
+The GUI will appear in a separate window and you can type questions directly.
+
 When to use which script:
 - Use `main.py` for a fuller, longer answer with source excerpts.
 - Use `agent.py` for brief, conversational answers suitable for quick responses.
