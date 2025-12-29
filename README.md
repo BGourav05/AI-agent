@@ -74,6 +74,25 @@ Single-query mode:
 python agent.py "what is photosynthesis?"
 ```
 
+Quick launch (Windows)
+----------------------
+
+To avoid typing the activation command every time, use the provided launcher scripts.
+
+- Double-click or run `run_agent.bat` (Command Prompt) to activate the venv (if present) and start the agent.
+- In PowerShell, run `.
+un_agent.ps1` to source the venv activation script and launch the agent.
+
+Examples:
+
+```powershell
+# Run interactive REPL via batch file
+.\run_agent.bat
+
+# Run single-query via PowerShell launcher
+.\run_agent.ps1 "what is photosynthesis?"
+```
+
 When to use which script:
 - Use `main.py` for a fuller, longer answer with source excerpts.
 - Use `agent.py` for brief, conversational answers suitable for quick responses.
