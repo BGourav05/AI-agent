@@ -51,3 +51,32 @@ If you want, I can:
 - Switch `main.py` back to LLM-based mode and add config to choose provider (requires API keys).
 - Add unit tests or GitHub Actions for CI.
 - Create a small CLI wrapper to save outputs automatically.
+
+Agent usage
+-----------
+
+This project includes a concise-answer interactive agent implemented in `agent.py`.
+It answers questions using only free public sources (Wikipedia, DuckDuckGo) and returns
+a short, easy-to-read response (1–2 sentences). Examples:
+
+Interactive REPL:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python agent.py
+# then type questions at the "Question:" prompt
+```
+
+Single-query mode:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python agent.py "what is photosynthesis?"
+```
+
+When to use which script:
+- Use `main.py` for a fuller, longer answer with source excerpts.
+- Use `agent.py` for brief, conversational answers suitable for quick responses.
+
+If you'd like, I can add a small unit test for `agent.py` and a README example showing
+how to invoke the agent programmatically from other scripts.
